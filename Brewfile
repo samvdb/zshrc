@@ -6,6 +6,7 @@ tap "caskroom/fonts"
 tap "homebrew/versions"
 
 brew "zsh"
+brew "z"
 brew "zsh-syntax-highlighting"
 brew "git"
 brew "gnutls"
