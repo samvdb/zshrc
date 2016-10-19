@@ -30,6 +30,9 @@ echo " ..done!"
 for FROM in $ZSH_ROOT/dotfiles/*; do
   NAME="$(basename $FROM)"
 
+  # Install bash 4 in case this line gives a bad substitution error.
+  # On OSX: $brew install bash
+  # #echo /usr/local/bin/bash >> /etc/shells
   # Dot the file unless it's blacklisted
   if [[ ! -n ${(M)NO_DOT:#${NAME}} ]]; then
     NAME=".${NAME}"
